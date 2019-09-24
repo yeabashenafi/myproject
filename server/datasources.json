@@ -1,0 +1,23 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mong": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "trial",
+    "password": "",
+    "name": "mong",
+    "user": "",
+    "useNewUrlParser": false,
+    "connector": "mongodb"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "C:/Users/Jerry/Documents/recipeserver/client/src/assets"
+  }
+}

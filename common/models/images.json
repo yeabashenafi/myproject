@@ -1,0 +1,45 @@
+{
+  "name": "images",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "prototype.rename": {
+      "accepts": [
+        {
+          "arg": "file",
+          "type": "string",
+          "http": {
+            "source": "body"
+          }
+        },
+        {
+          "arg": "newname",
+          "type": "string",
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "response",
+          "type": "string"
+        }
+      ],
+      "description": "used for renaming images",
+      "http": {
+        "verb": "post",
+        "path": "/rename",
+        "status": 201,
+        "errorstatus": "400"
+      }
+    }
+  }
+}
